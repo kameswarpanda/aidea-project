@@ -1,0 +1,19 @@
+{
+  "routes": [
+    "/about",
+    "/contact",
+    "/courses",
+    "/dashboard",
+    "/dashboard/announcements",
+    "/dashboard/community",
+    "/dashboard/dashboard/courses",
+    "/dashboard/my-learnings",
+    "/dashboard/playground",
+    "/dashboard/profile",
+    "/dashboard/progress",
+    "/faqs",
+    "/home",
+    "/login",
+    "/services"
+  ]
+}
