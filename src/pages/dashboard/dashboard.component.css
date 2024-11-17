@@ -1,6 +1,6 @@
 /* Overall container styling */
 .dashboard-container {
-  margin-top: 10px; /* Add space below navbar */
+  margin-top: 90px; /* Add space below navbar */
   margin-bottom: 20px;
 }
 
@@ -26,7 +26,7 @@
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   min-height: 100%;
-  max-width: 20%;
+  max-width: fit-content;
   margin-left: 10px;
   margin-right: 20px;
 }

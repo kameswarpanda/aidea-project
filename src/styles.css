@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #f8f9fa; /* Example light gray background */

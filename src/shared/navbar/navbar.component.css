@@ -1,24 +1,21 @@
 /* General Styling */
 .navbar {
-  /* position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%; */
+  background-color: black; /* Set navbar background to black */
+  color: white; /* Set text color to white */
   font-family: 'Arial', sans-serif;
   transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid white;
 }
-
-
 
 /* Navbar Brand */
 .navbar-brand {
   font-size: 1.5rem;
-  color: #007bff;
+  color: white; /* Set brand text to white */
 }
 
 .navbar-brand:hover {
   text-decoration: none;
-  color: #0056b3;
+  color: lightgray; /* Subtle hover effect for brand */
 }
 
 .navbar-brand .logo {
@@ -31,22 +28,23 @@
 /* Navbar Links */
 .nav-link {
   font-size: 1.1rem;
-  color: #333;
+  color: white; /* Set link text color to white */
   transition: color 0.2s ease-in-out;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #007bff;
+  color: lightgray; /* Subtle hover effect for links */
   font-weight: 600;
 }
 
+/* Navbar Toggler */
 .navbar-toggler {
   border: none;
 }
 
 .navbar-toggler-icon {
-  background-color: #007bff;
+  background-color: white; /* Set toggler icon color to white */
   border-radius: 2px;
   padding: 5px;
 }
@@ -55,14 +53,27 @@
 .btn-primary {
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
+  background-color: white; /* Set button background to white */
+  color: black; /* Set button text to black */
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: lightgray; /* Subtle hover effect for button */
   box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
 }
 
-/* .main{
-  margin-top: 100px;
-} */
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: black; /* Set dropdown background to black */
+  color: white; /* Set dropdown text color to white */
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: lightgray; /* Subtle hover effect for dropdown items */
+  color: black;
+}

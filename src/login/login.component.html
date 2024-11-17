@@ -1,7 +1,7 @@
 <div class="login-page">
   <div class="login-container card shadow-lg">
     <div class="card-header text-center bg-primary text-white">
-      <h2>Login to Your Account</h2>
+      <h2>Sign Up / Login</h2>
       <img src="images/Aidea logo.png" class="logo" />
     </div>
     <div class="card-body">
@@ -26,6 +26,7 @@
           <button type="submit" class="btn btn-primary w-100 btn-lg">
             Send OTP
           </button>
+          <a routerLink="/home"><p class="text-primart text-center mt-2">Back to home</p></a>
         </form>
       </div>
 
@@ -49,6 +50,7 @@
           <button
             type="submit"
             class="btn btn-success w-100 btn-lg"
+            (click)="onLogin()"
           >
             Verify and Login
           </button>

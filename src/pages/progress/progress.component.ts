@@ -1,27 +1,25 @@
-import { Component , AfterViewInit } from '@angular/core';
-import { Chart,
-  DoughnutController,
-  ArcElement,
-  Tooltip,
-  Legend, } from 'chart.js';
+import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Chart, DoughnutController, ArcElement, Tooltip, Legend } from 'chart.js';
 
 @Component({
   selector: 'app-progress',
-  standalone: true,
-  imports: [],
   templateUrl: './progress.component.html',
-  styleUrl: './progress.component.css'
+  styleUrls: ['./progress.component.css'] // Fixed typo in 'styleUrls'
 })
 export class ProgressComponent implements AfterViewInit {
   progressChart: any;
 
-  constructor() {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     // Register Chart.js components
     Chart.register(DoughnutController, ArcElement, Tooltip, Legend);
   }
 
   ngAfterViewInit() {
-    this.renderProgressChart();
+    if (isPlatformBrowser(this.platformId)) {
+      // Ensure the code runs only in the browser
+      this.renderProgressChart();
+    }
   }
 
   renderProgressChart() {
@@ -48,5 +46,4 @@ export class ProgressComponent implements AfterViewInit {
       },
     });
   }
-
 }

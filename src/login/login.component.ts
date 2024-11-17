@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../Authservice/auth.service';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],  // Add BrowserModule and FormsModule here
+  imports: [CommonModule, FormsModule,RouterLink],  // Add BrowserModule and FormsModule here
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'] // Corrected `styleUrl` to `styleUrls`
 })
@@ -16,7 +17,12 @@ export class LoginComponent {
   otp: string = '';
   otpSent: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
+
+  onLogin() {
+    // After successful login (e.g., form validation)
+    this.authService.login(); // Set login state to true
+  }
 
   sendOtp() {
     if (this.mobileNumber.length === 10) {
