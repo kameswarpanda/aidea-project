@@ -1,0 +1,123 @@
+/* General Page Styling */
+.announcement-container {
+  background: linear-gradient(to bottom, #f7f8fa, #d9e4ec);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header Styling */
+h1.fw-bold.text-gradient {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ff7eb3, #ff4a68, #ff002b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Quote Section */
+.alert {
+  text-align: center;
+  border: 1px solid black;
+  background: linear-gradient(45deg, #85d8ce, #a5ffd6);
+  color: #000000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alert h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Announcement Card Styling */
+.announcement-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.announcement-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.announcement-card .card-header {
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Gradients for Cards */
+.bg-gradient-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+}
+.bg-gradient-warning {
+  background: linear-gradient(45deg, #ffc107, #ff8c00);
+}
+.bg-gradient-success {
+  background: linear-gradient(45deg, #28a745, #155724);
+}
+
+/* Competitions Section */
+.card-body.bg-gradient-info {
+  background: linear-gradient(135deg, #17a2b8, #0275d8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(23, 162, 184, 0.2);
+}
+.card-body.bg-gradient-danger {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.2);
+}
+
+/* Stats Section */
+.stats-box {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.stats-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Gradients for Stats */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #6fa8dc, #3d85c6);
+}
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #f6b26b, #e69138);
+}
+.bg-gradient-success {
+  background: linear-gradient(135deg, #93c47d, #6aa84f);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

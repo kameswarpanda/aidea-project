@@ -1,0 +1,67 @@
+<div class="container-fluid community-container">
+  <h1 class="text-center mb-4 community-title">🌟 Welcome to the AI & Tech Community 🌟</h1>
+
+  <!-- Create Post Section -->
+  <div class="create-post mb-4 p-4 rounded shadow-sm">
+    <textarea
+      class="form-control"
+      rows="3"
+      placeholder="Share your thoughts or questions..."
+      [(ngModel)]="newPost.content"
+    ></textarea>
+    <button class="btn btn-gradient mt-3 px-5" (click)="addPost()">Post</button>
+  </div>
+
+  <!-- Posts Section -->
+  <div class="posts-section">
+    <div
+      class="post-card mb-4 p-4 rounded shadow"
+      *ngFor="let post of posts"
+    >
+      <div class="post-header d-flex align-items-center mb-2">
+        <img
+          [src]="post.userImage"
+          alt="User Avatar"
+          class="user-avatar me-3"
+        />
+        <div>
+          <h5 class="m-0">{{ post.username }}</h5>
+          <small class="text-muted">Posted 2 hours ago</small>
+        </div>
+      </div>
+      <p class="post-content mt-3">{{ post.content }}</p>
+
+      <!-- Post Actions -->
+      <div class="post-actions d-flex justify-content-between align-items-center mt-4">
+        <div class="like-section">
+          <button class="btn btn-gradient-sm" (click)="likePost(post)">
+            <i class="bi bi-hand-thumbs-up me-2"></i> Like ({{ post.likes }})
+          </button>
+        </div>
+        <div class="comments-toggle">
+          <button class="btn btn-outline-dark" (click)="toggleComments(post)">
+            <i class="bi bi-chat-text me-1"></i> Comments ({{ post.comments.length }})
+          </button>
+        </div>
+      </div>
+
+      <!-- Comments Section -->
+      <div class="comments-section mt-4" *ngIf="post.showComments">
+        <div class="comment" *ngFor="let comment of post.comments">
+          <p class="mb-1"><strong>{{ comment.username }}</strong>: {{ comment.text }}</p>
+        </div>
+        <div class="add-comment d-flex mt-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Write a comment..."
+            [(ngModel)]="post.newComment"
+          />
+          <button class="btn btn-gradient-sm ms-2" (click)="addComment(post)">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

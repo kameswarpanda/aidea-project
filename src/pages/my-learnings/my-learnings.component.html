@@ -1,0 +1,40 @@
+<div class="container">
+  <h2 class="text-center mb-4">Your Learning Dashboard</h2>
+
+  <div *ngFor="let course of enrolledCourses" class="row mb-4">
+    <div class="col-md-12">
+      <!-- Course Card -->
+      <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+          <h3>{{ course.courseName }}</h3>
+          <p class="small">{{ course.courseDescription }}</p>
+        </div>
+        <div class="card-body">
+          <!-- Chapter Cards -->
+          <div *ngFor="let chapter of course.chapters" class="card mb-3">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>{{ chapter.name }}</h5>
+                <span class="badge bg-info">{{ chapter.progress }}%</span>
+              </div>
+              <p>{{ chapter.description }}</p>
+              <!-- Progress Bar -->
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  [ngStyle]="{ 'width': chapter.progress + '%' }"
+                  [class.bg-success]="chapter.progress >= 80"
+                  [class.bg-warning]="chapter.progress >= 50 && chapter.progress < 80"
+                  [class.bg-danger]="chapter.progress < 50"
+                ></div>
+              </div>
+              <!-- Action Button -->
+              <button class="btn btn-primary mt-2">Continue Learning</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

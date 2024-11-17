@@ -1,0 +1,53 @@
+/* Contact Page Custom Styles */
+
+/* Hero Section */
+.contact-hero {
+  background: linear-gradient(135deg, #00BCD4, #6A1B9A);
+  padding: 80px 15px;
+  color: #fff;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact-hero p {
+  font-size: 1.25rem;
+}
+
+/* Contact Form */
+.contact-form h2 {
+  color: #6A1B9A;
+}
+
+#contactForm .form-control {
+  border-radius: 10px;
+  border: 2px solid #E3E3E3;
+}
+
+#contactForm .btn-primary {
+  background: #6A1B9A;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+#contactForm .btn-primary:hover {
+  background: #00BCD4;
+}
+
+/* Contact Info */
+.contact-form ul li {
+  font-size: 1.1rem;
+}
+
+.contact-form ul li i {
+  font-size: 1.3rem;
+}
+
+/* Map Section */
+.map-section iframe {
+  border: none;
+  border-radius: 10px;
+}

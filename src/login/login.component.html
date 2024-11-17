@@ -1,0 +1,59 @@
+<div class="login-page">
+  <div class="login-container card shadow-lg">
+    <div class="card-header text-center bg-primary text-white">
+      <h2>Login to Your Account</h2>
+      <img src="images/Aidea logo.png" class="logo" />
+    </div>
+    <div class="card-body">
+      <!-- Mobile Number Input -->
+      <div *ngIf="!otpSent">
+        <form (ngSubmit)="sendOtp()">
+          <div class="mb-4">
+            <label for="mobileNumber" class="form-label"
+              >Enter Mobile Number</label
+            >
+            <input
+              type="tel"
+              id="mobileNumber"
+              class="form-control form-control-lg"
+              [(ngModel)]="mobileNumber"
+              name="mobileNumber"
+              pattern="[0-9]{10}"
+              required
+              placeholder="Enter your 10-digit mobile number"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-lg">
+            Send OTP
+          </button>
+        </form>
+      </div>
+
+      <!-- OTP Verification -->
+      <div *ngIf="otpSent">
+        <form (ngSubmit)="verifyOtp()">
+          <div class="mb-4">
+            <label for="otp" class="form-label">Enter OTP</label>
+            <input
+              type="text"
+              id="otp"
+              class="form-control form-control-lg"
+              [(ngModel)]="otp"
+              name="otp"
+              pattern="[0-9]{6}"
+              required
+              maxlength="6"
+              placeholder="Enter the 6-digit OTP"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-success w-100 btn-lg"
+          >
+            Verify and Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

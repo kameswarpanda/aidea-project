@@ -1,0 +1,68 @@
+/* General Styling */
+.navbar {
+  /* position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%; */
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.navbar-brand .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Links */
+.nav-link {
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* Sign-Up Button */
+.btn-primary {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
+}
+
+/* .main{
+  margin-top: 100px;
+} */

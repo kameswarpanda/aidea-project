@@ -1,0 +1,92 @@
+/* Community Page Styles */
+.community-container {
+  background: linear-gradient(to bottom, #f0f4ff, #dce7ff);
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.community-title {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-weight: bold;
+}
+
+.create-post {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  color: #fff;
+}
+
+.btn-gradient-sm {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.3rem 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-gradient-sm:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  color: #fff;
+}
+
+.post-card {
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #555;
+}
+
+.post-actions button {
+  font-size: 0.9rem;
+}
+
+.comments-section {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 1rem;
+}
+
+.add-comment input {
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.add-comment button {
+  height: 38px;
+  border-radius: 10px;
+}

@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #f8f9fa; /* Example light gray background */
+  margin: 0; /* Ensure no default browser margins */
+  padding: 0; /* Remove padding */
+  font-family: Arial, sans-serif; /* Optional: Set a global font */
+}
+
+
+/* font-family: Roboto, "Helvetica Neue", sans-serif; */

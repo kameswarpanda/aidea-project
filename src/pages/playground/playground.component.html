@@ -1,0 +1,33 @@
+<div class="playground-container">
+  <h1 class="text-center text-gradient">Code Playground</h1>
+  <p class="text-muted text-center">
+    Practice coding in multiple languages and see instant results!
+  </p>
+
+  <div class="editor-section">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="languageSelect" class="form-label">Select Language</label>
+        <select class="form-select" id="languageSelect" [(ngModel)]="selectedLanguage">
+          <option *ngFor="let language of languages" [value]="language">
+            {{ language }}
+          </option>
+        </select>
+      </div>
+      <div class="col-md-8">
+        <button class="btn btn-success compile-run-btn" (click)="runCode()">Compile & Run</button>
+      </div>
+    </div>
+    <textarea
+      class="code-editor"
+      [(ngModel)]="code"
+      rows="15"
+      placeholder="Write your code here..."
+    ></textarea>
+  </div>
+
+  <div class="output-section">
+    <h4 class="output-title">Output</h4>
+    <pre class="output-box">{{ output }}</pre>
+  </div>
+</div>

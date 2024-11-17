@@ -1,0 +1,77 @@
+<div class="container-fluid dashboard-container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 dashboard-sidebar">
+      <h4 class="text-center sidebar-title">Dashboard</h4>
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search..."
+        [(ngModel)]="searchQuery"
+      />
+      <ul class="list-group text-center">
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="my-learnings"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-book me-2"></i> My Learnings
+        </button>
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="progress"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-graph-up-arrow me-2"></i> My Progress
+        </button>
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="dashboard/courses"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-journal me-2"></i> All Courses
+        </button>
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="community"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-people me-2"></i> Community
+        </button>
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="playground"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-controller me-2"></i> Playground
+        </button>
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="announcements"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-megaphone me-2"></i> Announcements
+        </button>
+        <button
+          type="button"
+          class="btn text-white"
+          routerLink="profile"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-person-lines-fill me-2"></i> Update Profile
+        </button>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9 dashboard-main scrollable-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>x 
+</div>

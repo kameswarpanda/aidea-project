@@ -1,0 +1,47 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.card {
+  border-radius: 15px;
+}
+
+.card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+section {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+select {
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.text-muted {
+  font-size: 14px;
+}

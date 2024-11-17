@@ -1,0 +1,193 @@
+<div class="container">
+  <div class="card shadow-lg">
+    <div class="card-header bg-primary text-white">
+      <h2 class="text-center">Update Profile</h2>
+    </div>
+    <div class="card-body">
+      <!-- Student Profile Section -->
+      <section class="mb-5">
+        <h3 class="text-primary">Student Profile</h3>
+        <p class="text-muted">
+          Information you provide will be used for certificates, exams, placements, etc.
+        </p>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" id="firstName" class="form-control" placeholder="Ex: Sachin" />
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Surname/Last Name</label>
+            <input type="text" id="lastName" class="form-control" placeholder="Ex: Tendulkar" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="certificateName" class="form-label">Name as per 12th Certificate</label>
+          <input type="text" id="certificateName" class="form-control" placeholder="Enter name as per ID" />
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label class="form-label">Gender</label>
+            <select class="form-select">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Transgender</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" id="dob" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <label for="linkedin" class="form-label">LinkedIn Profile</label>
+            <input type="url" id="linkedin" class="form-control" placeholder="Ex: https://linkedin.com/in/username" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Details -->
+      <section class="mb-5">
+        <h3 class="text-primary">Student Contact Details</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Registered Phone Number</label>
+            <input type="tel" id="phone" class="form-control" placeholder="+91 9100982321" />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email ID</label>
+            <input type="email" id="email" class="form-control" placeholder="Ex: example@gmail.com" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Parent/Guardian Details -->
+      <section class="mb-5">
+        <h3 class="text-primary">Parent/Guardian Details</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="parentName" class="form-label">Parent's Name</label>
+            <input type="text" id="parentName" class="form-control" placeholder="Ex: Ramesh" />
+          </div>
+          <div class="col-md-6">
+            <label for="relation" class="form-label">Relation</label>
+            <input type="text" id="relation" class="form-control" placeholder="Ex: Mother" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Address -->
+      <section class="mb-5">
+        <h3 class="text-primary">Current Address</h3>
+        <div class="mb-3">
+          <label for="address1" class="form-label">Address Line 1</label>
+          <input type="text" id="address1" class="form-control" />
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="state" class="form-label">State</label>
+            <input type="text" id="state" class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label for="city" class="form-label">City</label>
+            <input type="text" id="city" class="form-control" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Details -->
+      <section class="mb-5">
+        <h3 class="text-primary">Education Details</h3>
+        <div class="accordion" id="educationAccordion">
+          <!-- 10th Standard -->
+          <div class="accordion-item border-primary">
+            <h2 class="accordion-header" id="heading10th">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse10th"
+                aria-expanded="false"
+                aria-controls="collapse10th"
+              >
+                10th Standard
+              </button>
+            </h2>
+            <div id="collapse10th" class="accordion-collapse collapse" aria-labelledby="heading10th">
+              <div class="accordion-body">
+                <label for="board10th" class="form-label">Board</label>
+                <input type="text" id="board10th" class="form-control mb-3" value="CBSE" />
+                <label for="school10th" class="form-label">School Name</label>
+                <input type="text" id="school10th" class="form-control mb-3" value="Akshara Vaagdevi International School" />
+                <label for="percentage10th" class="form-label">Percentage</label>
+                <input type="number" id="percentage10th" class="form-control" value="80" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 12th/Intermediate -->
+          <div class="accordion-item border-primary">
+            <h2 class="accordion-header" id="heading12th">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse12th"
+                aria-expanded="false"
+                aria-controls="collapse12th"
+              >
+                Intermediate/12th/Diploma
+              </button>
+            </h2>
+            <div id="collapse12th" class="accordion-collapse collapse" aria-labelledby="heading12th">
+              <div class="accordion-body">
+                <label for="institute12th" class="form-label">Institute Name</label>
+                <input type="text" id="institute12th" class="form-control mb-3" value="Vaibhav Junior College" />
+                <label for="cgpa12th" class="form-label">CGPA</label>
+                <input type="number" id="cgpa12th" class="form-control mb-3" value="8" />
+                <label for="completionYear12th" class="form-label">Year of Completion</label>
+                <input type="number" id="completionYear12th" class="form-control" value="2024" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bachelor's Degree -->
+          <div class="accordion-item border-primary">
+            <h2 class="accordion-header" id="headingDegree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseDegree"
+                aria-expanded="false"
+                aria-controls="collapseDegree"
+              >
+                Bachelor's Degree
+              </button>
+            </h2>
+            <div id="collapseDegree" class="accordion-collapse collapse" aria-labelledby="headingDegree">
+              <div class="accordion-body">
+                <label for="degreeName" class="form-label">Degree</label>
+                <input type="text" id="degreeName" class="form-control mb-3" value="BSc (Bachelor of Science)" />
+                <label for="branch" class="form-label">Department/Branch</label>
+                <input type="text" id="branch" class="form-control mb-3" value="Computer Science Engineering (CSE)" />
+                <label for="cgpaDegree" class="form-label">CGPA</label>
+                <input type="number" id="cgpaDegree" class="form-control mb-3" value="0" />
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="startYear" class="form-label">Start Year</label>
+                    <input type="number" id="startYear" class="form-control" value="2024" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="endYear" class="form-label">End Year</label>
+                    <input type="number" id="endYear" class="form-control" value="2027" />
+                  </div>
+                </div>
+                <label for="instituteName" class="form-label mt-3">Institute Name</label>
+                <input type="text" id="instituteName" class="form-control" value="IIIT Hyderabad" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

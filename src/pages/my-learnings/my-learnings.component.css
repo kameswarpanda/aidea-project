@@ -1,0 +1,89 @@
+/* Styling for the course card */
+.card {
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to right, #0066cc, #00cc99);
+}
+
+.card-body {
+  background-color: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Progress Bar Styling */
+.progress {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  transition: width 0.4s ease;
+}
+
+.progress-bar.bg-success {
+  background-color: #28a745 !important;
+}
+
+.progress-bar.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.progress-bar.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+/* Button Styling */
+button {
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0066cc;
+  border-color: #005bb5;
+}
+
+/* Custom Font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h3, h5 {
+  font-weight: 600;
+}
+
+/* Chapter Card Styling */
+.card.mb-3 {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+/* Add shadow to the "Continue Learning" button */
+button {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #004080;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-header h3 {
+    font-size: 1.5rem;
+  }
+}
