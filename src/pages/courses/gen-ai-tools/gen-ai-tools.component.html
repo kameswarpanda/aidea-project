@@ -1,0 +1,21 @@
+<div class="container py-5">
+  <!-- Iterate through categories dynamically -->
+  <div *ngFor="let category of tools | keyvalue" class="category-section">
+    <!-- Category Header -->
+    <div class="category-header">
+      <h2 class="fw-bold">{{ category.key }}</h2>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid">
+      <div *ngFor="let tool of category.value" class="tool-card">
+        <div class="card-content">
+          <img [src]="tool.image" [alt]="tool.name" class="card-image" />
+          <h3 class="card-title">{{ tool.name }}</h3>
+          <p class="card-description">{{ tool.description }}</p>
+          <a [href]="tool.link" target="_blank" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

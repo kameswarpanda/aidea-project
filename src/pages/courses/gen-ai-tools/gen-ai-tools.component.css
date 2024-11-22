@@ -1,0 +1,101 @@
+/* General Container Styling */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Category Section Styling */
+.category-section {
+  margin-bottom: 4rem;
+}
+
+.category-header h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #007bff;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Individual Card */
+.tool-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-image {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+  height: 50px;
+  overflow: hidden;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .category-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+}

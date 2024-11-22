@@ -13,6 +13,7 @@ import { PlaygroundComponent } from '../pages/playground/playground.component';
 import { UserProfilesComponent } from '../pages/user-profiles/user-profiles.component';
 import { MyLearningsComponent } from '../pages/my-learnings/my-learnings.component';
 import { CommunityComponent } from '../pages/community/community.component';
+import { GenAiToolsComponent } from '../pages/courses/gen-ai-tools/gen-ai-tools.component';
 
 export const routes: Routes = [
   
@@ -20,6 +21,7 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'courses', component: CoursesComponent },
+  { path: 'gen-ai-tools', component: GenAiToolsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'faqs', component: FaqsComponent },
   { path: 'contact', component: ContactComponent },
@@ -30,6 +32,7 @@ export const routes: Routes = [
     children: [
       { path: 'progress', component: ProgressComponent },
       { path: 'dashboard/courses', component: CoursesComponent },
+      // { path: 'gen-ai-tools', component: GenAiToolsComponent },
       { path: 'my-learnings', component: MyLearningsComponent },
       { path: 'community', component: CommunityComponent },
       { path: 'playground', component: PlaygroundComponent},
