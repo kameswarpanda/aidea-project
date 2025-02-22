@@ -1,0 +1,25 @@
+{
+  "routes": [
+    "/about",
+    "/ai-robotics",
+    "/cbse-ai-modules",
+    "/contact",
+    "/courses",
+    "/dashboard",
+    "/dashboard/announcements",
+    "/dashboard/community",
+    "/dashboard/dashboard/courses",
+    "/dashboard/my-learnings",
+    "/dashboard/playground",
+    "/dashboard/profile",
+    "/dashboard/progress",
+    "/faqs",
+    "/gen-ai-tools",
+    "/home",
+    "/login",
+    "/machine-learning",
+    "/prompt-engineering",
+    "/real-life-projects",
+    "/services"
+  ]
+}
