@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 fixed-top">
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 fixed-top"
+>
   <div class="container">
     <a class="navbar-brand fw-bold" routerLink="/home">
       <img src="images/Aidea logo.png" alt="Logo" class="logo me-2" />
@@ -18,19 +20,45 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active" *ngIf="!isLoggedIn">Home</a>
+          <a
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            *ngIf="!isLoggedIn"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" *ngIf="!isLoggedIn" routerLink="/services" routerLinkActive="active">Services</a>
+          <a
+            class="nav-link"
+            *ngIf="!isLoggedIn"
+            routerLink="/services"
+            routerLinkActive="active"
+            >Services</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/courses" routerLinkActive="active">Courses</a>
+          <a class="nav-link" routerLink="/courses" routerLinkActive="active"
+            >Courses</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about" routerLinkActive="active" *ngIf="!isLoggedIn">About Us</a>
+          <a
+            class="nav-link"
+            routerLink="/about"
+            routerLinkActive="active"
+            *ngIf="!isLoggedIn"
+            >About Us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active" *ngIf="!isLoggedIn">Contact</a>
+          <a
+            class="nav-link"
+            routerLink="/contact"
+            routerLinkActive="active"
+            *ngIf="!isLoggedIn"
+            >Contact</a
+          >
         </li>
         <li class="nav-item">
           <a
@@ -38,7 +66,7 @@
             *ngIf="!isLoggedIn"
             routerLink="/login"
           >
-            Sign Up / Login
+            Login
           </a>
         </li>
         <li class="nav-item dropdown">
@@ -53,7 +81,10 @@
           >
             My Profile
           </a>
-          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="profileDropdown">
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+            aria-labelledby="profileDropdown"
+          >
             <li>
               <a
                 class="dropdown-item"
@@ -63,11 +94,14 @@
                 Dashboard
               </a>
             </li>
-            <li><a class="dropdown-item" *ngIf="isLoggedIn" (click)="onLogout()">Logout</a></li>
+            <li>
+              <a class="dropdown-item" *ngIf="isLoggedIn" (click)="onLogout()"
+                >Logout</a
+              >
+            </li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-

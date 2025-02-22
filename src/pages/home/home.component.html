@@ -1,19 +1,28 @@
+<!-- Hero Section with Background Video -->
 <div class="hero-section text-center text-light d-flex align-items-center">
-  <div class="container">
+  <video autoplay muted loop class="background-video">
+    <source src="videos/140578-775389242_small.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="container content-overlay">
     <h1 class="display-3 fw-bold">AIDEA</h1>
     <p class="lead tagline">AI for Future</p>
     <p class="description fs-5">
-      Master AI Tools, Machine Learning, Robotics, and more. Designed for CBSE students (8th-12th) and general learners.
+      Master AI Tools, Machine Learning, Robotics, and more. Designed for CBSE
+      students (8th-12th) and general learners.
     </p>
-    <a href="#courses" class="btn btn-primary btn-lg mt-3">Explore Courses</a>
+    <a class="btn btn-primary btn-lg mt-3" routerLink="/courses"
+      >Explore Courses</a
+    >
   </div>
 </div>
 
+<!-- Our Features Section -->
 <div class="container py-5" id="features">
-  <h2 class="text-center mb-5">Our Features</h2>
+  <h2 class="text-center mb-5 section-title">Our Features</h2>
   <div class="row g-4">
     <div class="col-md-4">
-      <div class="card h-100 text-center shadow-sm">
+      <div class="card h-100 text-center shadow-sm feature-card">
         <div class="card-body">
           <i class="bi bi-tools display-4 text-primary"></i>
           <h3 class="card-title mt-3">AI Tools</h3>
@@ -24,7 +33,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card h-100 text-center shadow-sm">
+      <div class="card h-100 text-center shadow-sm feature-card">
         <div class="card-body">
           <i class="bi bi-journal-bookmark display-4 text-success"></i>
           <h3 class="card-title mt-3">Structured Learning</h3>
@@ -35,7 +44,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card h-100 text-center shadow-sm">
+      <div class="card h-100 text-center shadow-sm feature-card">
         <div class="card-body">
           <i class="bi bi-lightbulb display-4 text-warning"></i>
           <h3 class="card-title mt-3">Real-Life Projects</h3>
@@ -48,10 +57,79 @@
   </div>
 </div>
 
-<div class="cta-section bg-light py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Start Your AI Journey Today!</h2>
-    <p class="fs-5">Join AIDEA and embrace the future of technology.</p>
-    <a href="#contact" class="btn btn-success btn-lg mt-3">Get Started</a>
+<!-- Our Curriculum Section -->
+<div class="container py-5" id="curriculum">
+  <h2 class="text-center mb-5 section-title">Our Curriculum</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card curriculum-card">
+        <div class="card-body">
+          <h3 class="card-title">Beginner Level</h3>
+          <p>
+            Foundations of AI, Prompt Engineering, and AI Tools (8th-9th Grade).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card curriculum-card">
+        <div class="card-body">
+          <h3 class="card-title">Intermediate Level</h3>
+          <p>AI Tools & Tech-Stack to build AI Tools (10th Grade).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card curriculum-card">
+        <div class="card-body">
+          <h3 class="card-title">Advanced Level</h3>
+          <p>Applied Machine Learning & Blockchain (11th-12th Grade).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card curriculum-card">
+        <div class="card-body">
+          <h3 class="card-title">Capstone Projects</h3>
+          <p>Real-world problem-solving with AI and ML.</p>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- Why AIDEA Section -->
+<div class="container py-5" id="why-aidea">
+  <h2 class="text-center mb-5 section-title">Why AIDEA?</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="why-card">
+        <h3 class="fw-bold">Regular Schools</h3>
+        <ul>
+          <li>No subject expertise</li>
+          <li>No hands-on AI work</li>
+          <li>No practical knowledge</li>
+          <li>Only book-based learning</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="why-card">
+        <h3 class="fw-bold">AIDEA</h3>
+        <ul>
+          <li>Subject expertise</li>
+          <li>Hands-on AI experience</li>
+          <li>Theoretical & practical knowledge</li>
+          <li>Portal-based learning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section text-center">
+  <h2>Start Your AI Journey Today!</h2>
+  <p>Join AIDEA and embrace the future of technology.</p>
+  <a routerLink="/login" class="btn btn-success btn-lg mt-3">Get Started</a>
 </div>

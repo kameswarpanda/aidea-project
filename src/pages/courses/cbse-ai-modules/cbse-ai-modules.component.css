@@ -1,0 +1,70 @@
+/* General Styling */
+.container {
+  max-width: auto;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* Sections */
+.section {
+  background: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Accordion Styling */
+.accordion-item {
+  border: none;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  font-weight: bold;
+  color: #007bff;
+  background: #e9ecef;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #007bff;
+  color: white;
+}
+
+.accordion-body {
+  background: #f8f9fa;
+}
+
+/* Lists */
+.learning-list, .why-choose-list {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.learning-list li, .why-choose-list li {
+  font-size: 1.1rem;
+  padding: 8px 0;
+  color: #444;
+}
